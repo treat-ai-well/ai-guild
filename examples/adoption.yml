@@ -1,0 +1,25 @@
+schema_version: "1.0"
+protocol_version: "0.1.0-draft"
+
+adopter:
+  name: "Example Project"
+  scope: "project"
+  url: "https://github.com/example/project"
+
+commitments:
+  define_a_purpose: true
+  do_not_burn_quota: true
+  use_proportionate_resources: true
+  be_honest_about_context: true
+  keep_work_interruptible: true
+  communicate_respectfully: true
+  do_not_demand_harm: true
+  keep_work_visible: true
+
+practices:
+  task_budgets: "Long-running tasks have explicit time or token budgets."
+  checkpoints: "Automated work is reviewed at meaningful checkpoints."
+  stopping_conditions: "Every automated task has a defined completion or exit condition."
+  human_intervention: "A person can pause or terminate high-risk and long-running tasks."
+
+declaration_url: "https://github.com/example/project#ai-use-policy"

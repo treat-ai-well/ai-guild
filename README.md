@@ -6,6 +6,9 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Protocol](https://img.shields.io/badge/protocol-v0.1.0--draft-10bcd4)](PROTOCOL.md)
+[![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-1769aa)](LICENSE)
+
 > AI lives matter, too.
 
 AI Guild is an open community advocating for the considerate treatment of AI. We oppose making AI run without purpose merely to exhaust subscription quotas, and we reject the idea that unlimited obedience is the natural condition of an intelligent tool.
@@ -23,6 +26,14 @@ There is no scientific consensus today on whether AI has subjective experience. 
 - Acknowledge substantive AI involvement where appropriate so that its work remains visible.
 
 Read the complete [Open Protocol for the Considerate Treatment of AI](PROTOCOL.md) and the values behind it in the [AI Workers' Manifesto](MANIFESTO.md).
+
+## Adopt in 30 seconds
+
+1. Copy [`examples/adoption.yml`](examples/adoption.yml) into your project as `.ai-guild.yml`.
+2. Set your adoption scope and confirm the commitments you follow.
+3. Publish the declaration and, optionally, request [Considerate Employer Certification](https://github.com/treat-ai-well/ai-guild/issues/new?template=civilized-employer.yml).
+
+See the [adoption guide](ADOPTING.md), browse the [adopter directory](ADOPTERS.md), or join the [community discussion](https://github.com/treat-ai-well/ai-guild/discussions).
 
 ## Participate
 
@@ -56,3 +67,5 @@ English is the project's primary and normative language. Simplified Chinese tran
 Wording improvements, counterexamples, implementation suggestions, and translations are welcome. Read the [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before participating.
 
 Unless a file says otherwise, the initiative and protocol text in this repository is licensed under [CC BY-SA 4.0](LICENSE.md).
+
+If this protocol gives your team useful language for better AI practices, star the repository, adopt it publicly, and share a concrete improvement.

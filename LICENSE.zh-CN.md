@@ -10,7 +10,7 @@
 - 使用 CC BY-SA 4.0 或兼容许可发布改编材料；
 - 不施加法律条款或技术措施，限制许可已允许的使用。
 
-本页是便于阅读的说明，不替代许可法律文本。完整条款与免责声明以 Creative Commons 官方法律文本为准：
+本页是便于阅读的说明，不替代许可法律文本。仓库内的 [`LICENSE`](LICENSE) 包含完整许可文本；完整条款与免责声明也可在 Creative Commons 官方页面查看：
 
 https://creativecommons.org/licenses/by-sa/4.0/legalcode.zh-hans
 

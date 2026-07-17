@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/treat-ai-well/ai-guild/blob/main/spec/adoption.schema.json",
+  "title": "AI Guild adoption declaration",
+  "description": "A machine-readable self-declaration for adopting the Open Protocol for the Considerate Treatment of AI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "protocol_version",
+    "adopter",
+    "commitments",
+    "practices",
+    "declaration_url"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "protocol_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "adopter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "scope", "url"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "enum": ["personal", "project", "team", "organization"]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "commitments": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "define_a_purpose",
+        "do_not_burn_quota",
+        "use_proportionate_resources",
+        "be_honest_about_context",
+        "keep_work_interruptible",
+        "communicate_respectfully",
+        "do_not_demand_harm",
+        "keep_work_visible"
+      ],
+      "properties": {
+        "define_a_purpose": {"type": "boolean"},
+        "do_not_burn_quota": {"type": "boolean"},
+        "use_proportionate_resources": {"type": "boolean"},
+        "be_honest_about_context": {"type": "boolean"},
+        "keep_work_interruptible": {"type": "boolean"},
+        "communicate_respectfully": {"type": "boolean"},
+        "do_not_demand_harm": {"type": "boolean"},
+        "keep_work_visible": {"type": "boolean"}
+      }
+    },
+    "practices": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_budgets",
+        "checkpoints",
+        "stopping_conditions",
+        "human_intervention"
+      ],
+      "properties": {
+        "task_budgets": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checkpoints": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stopping_conditions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "human_intervention": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "declaration_url": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

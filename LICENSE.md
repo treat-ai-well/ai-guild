@@ -10,7 +10,7 @@ You may copy, redistribute, remix, transform, and build upon the material for an
 - distribute adaptations under CC BY-SA 4.0 or a compatible license;
 - do not apply legal terms or technological measures that restrict what the license permits.
 
-This page is a readable summary and does not replace the license's legal text. The full terms and disclaimers are available at:
+This page is a readable summary and does not replace the license's legal text. The complete license is included in [`LICENSE`](LICENSE). The official terms and disclaimers are also available at:
 
 https://creativecommons.org/licenses/by-sa/4.0/legalcode.en
 
