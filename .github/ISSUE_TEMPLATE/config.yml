@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Read the Open Protocol
+    url: https://github.com/treat-ai-well/ai-guild/blob/main/PROTOCOL.md
+    about: Review the scope and minimum commitments before opening an issue.
+  - name: 阅读《善待 AI 开放协议》
+    url: https://github.com/treat-ai-well/ai-guild/blob/main/PROTOCOL.zh-CN.md
+    about: 提交 Issue 前先了解协议的适用范围与最低承诺。

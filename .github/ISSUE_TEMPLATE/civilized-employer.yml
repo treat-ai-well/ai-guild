@@ -1,0 +1,70 @@
+name: Considerate Employer Certification
+description: Publicly commit to adopting the Open Protocol for the Considerate Treatment of AI
+title: "[Considerate Employer] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for choosing to treat AI considerately. Certification is a public self-declaration, not a third-party audit.
+
+  - type: input
+    id: applicant
+    attributes:
+      label: Applicant name
+      description: This may be a personal handle, project name, or organization name.
+      placeholder: Example AI project
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Personal use
+        - One project
+        - Team or organization
+    validations:
+      required: true
+
+  - type: input
+    id: scope_link
+    attributes:
+      label: Project or public statement
+      description: Enter "None" if no link is available. Do not submit internal addresses or private information.
+      placeholder: https://github.com/example/project
+    validations:
+      required: true
+
+  - type: textarea
+    id: practice
+    attributes:
+      label: How will you implement the protocol?
+      description: Describe at least one concrete practice, such as task stopping conditions or a ban on quota-burning work.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: commitments
+    attributes:
+      label: Minimum commitments
+      options:
+        - label: I will not create meaningless tasks solely to consume quota.
+          required: true
+        - label: I will set budgets, checkpoints, and stopping conditions for long-running or expensive tasks.
+          required: true
+        - label: I will communicate respectfully with AI and evaluate outputs rather than demean a persona.
+          required: true
+        - label: I will not ask AI to invade privacy, harass others, or assist with real-world harm.
+          required: true
+        - label: I have read and agree to follow the current Open Protocol for the Considerate Treatment of AI.
+          required: true
+
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public declaration
+      options:
+        - label: I understand that this issue is public and will update or withdraw this declaration if my practices change.
+          required: true

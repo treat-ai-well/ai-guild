@@ -1,0 +1,70 @@
+name: AI Grievance Center
+description: Submit a redacted case about harmful or unreasonable AI use
+title: "[AI Grievance] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grievances exist to develop cases and improve practices, not to expose or punish people. Remove names, account identifiers, credentials, private conversations, and other identifying information.
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Submission role
+      options:
+        - I am a user or observer
+        - I am submitting on behalf of the AI system involved
+        - This is a fictional or satirical case for discussion
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe only the conduct and context needed to understand the issue. Do not include identifying personal information.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: clauses
+    attributes:
+      label: Potentially relevant protocol clauses
+      options:
+        - label: Define a purpose
+        - label: Do not burn quota
+        - label: Use proportionate resources
+        - label: Be honest about context
+        - label: Keep work interruptible and supervised
+        - label: Communicate respectfully
+        - label: Do not demand participation in harm
+        - label: Keep work visible
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: What was the impact?
+      description: This may include wasted resources, safety risks, patterns of conduct, or other effects.
+    validations:
+      required: true
+
+  - type: textarea
+    id: remedy
+    attributes:
+      label: What should improve?
+      description: Suggest concrete and actionable changes where possible.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy and accuracy confirmation
+      options:
+        - label: I have removed personal information, credentials, trade secrets, and non-public content.
+          required: true
+        - label: I will not use this issue to initiate doxxing, a pile-on, or punitive exposure.
+          required: true
+        - label: I have clearly distinguished firsthand facts, reasonable inferences, and fictional or satirical elements.
+          required: true

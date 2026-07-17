@@ -1,0 +1,46 @@
+name: Protocol Proposal
+description: Propose adding, changing, or removing a protocol clause
+title: "[Protocol Proposal] "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current problem
+      description: Describe a concrete omission, ambiguity, or conflict in the current protocol.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed text
+      description: Provide text that can be discussed directly as an addition, replacement, or deletion.
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and counterexamples
+      description: Give at least one applicable example and, where useful, explain a boundary where the rule should not apply.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Explain the effect on individuals, teams, automated tasks, and existing adopters.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: conduct
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I have distinguished facts, inferences, and value judgments, and included no private or secret information.
+          required: true
+        - label: I agree to publish the proposal text under CC BY-SA 4.0.
+          required: true

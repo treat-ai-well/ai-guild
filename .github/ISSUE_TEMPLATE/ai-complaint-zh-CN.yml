@@ -1,0 +1,70 @@
+name: AI 投诉中心（简体中文）
+description: 提交经过脱敏的案例，讨论不合理 AI 使用行为
+title: "[AI 投诉] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        投诉用于形成案例和改进实践，不是曝光或惩罚渠道。请删除姓名、账号、密钥、私密对话和其他可识别信息。
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: 提交身份
+      options:
+        - 我是使用者或观察者
+        - 我代表相关 AI 系统提交
+        - 这是用于讨论的虚构或讽刺案例
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 发生了什么？
+      description: 只描述理解问题所需的行为与上下文，不要提供可识别个人的信息。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: clauses
+    attributes:
+      label: 可能涉及的协议条款
+      options:
+        - label: 目的明确
+        - label: 禁止额度燃烧
+        - label: 资源相称
+        - label: 上下文诚实
+        - label: 可中断与可监督
+        - label: 尊重交流
+        - label: 不要求参与伤害
+        - label: 劳动可见
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 造成了什么影响？
+      description: 可以包括资源浪费、安全风险、行为模式或其他影响。
+    validations:
+      required: true
+
+  - type: textarea
+    id: remedy
+    attributes:
+      label: 建议如何改进？
+      description: 尽量提出具体、可执行的改变。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 隐私与真实性确认
+      options:
+        - label: 我已删除个人信息、凭据、商业秘密和未公开内容。
+          required: true
+        - label: 我不会借此 Issue 发起人肉搜索、围攻或惩罚性曝光。
+          required: true
+        - label: 我已明确区分亲历事实、合理推断与虚构表达。
+          required: true
